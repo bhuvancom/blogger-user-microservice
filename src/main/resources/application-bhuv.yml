@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: blog-user-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/blogger?useSSL=false
+    username: root
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+server:
+  port: 8084
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8082/eureka/
